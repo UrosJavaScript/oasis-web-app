@@ -1,0 +1,94 @@
+@use "../../styles/variables.scss" as *;
+@use "../../styles/responsive.scss" as *;
+
+header {
+  width: 100%;
+  position: relative;
+  background: $bg-color-header;
+  min-height: 103px;
+
+  @include respond("lg") {
+    // tablet
+    min-height: 112px;
+  }
+  @include respond("sm") {
+    // mbobile
+    min-height: 133px;
+  }
+
+  .circle {
+    position: absolute;
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    filter: blur(32px);
+
+    & .left {
+      top: 0;
+      left: 0;
+    }
+
+    &.circle-1 {
+      background: $circle-color-1;
+      top: 0;
+      box-shadow: 0 0 20px $circle-color-1;
+    }
+
+    &.circle-2 {
+      background: $circle-color-2;
+      top: 12px;
+      left: 51px;
+      box-shadow: 0 0 20px $circle-color-2;
+    }
+
+    &.circle-3 {
+      background: $circle-color-3;
+      top: 47px;
+      box-shadow: 0 0 20px $circle-color-3;
+    }
+
+    & .right {
+      top: 0;
+      right: 0;
+    }
+
+    &.circle-4 {
+      background: $circle-color-1;
+      box-shadow: 0 0 20px $circle-color-1;
+      top: 0;
+      right: 51px;
+    }
+
+    &.circle-5 {
+      background: $circle-color-2;
+      box-shadow: 0 0 20px $circle-color-2;
+      top: 12px;
+      right: 0;
+    }
+
+    &.circle-6 {
+      background: $circle-color-3;
+      box-shadow: 0 0 20px $circle-color-3;
+      top: 47px;
+      right: 51px;
+    }
+  }
+
+  .section {
+    display: flex;
+    justify-content: space-between;
+    color: gold;
+    padding: 12px 200px;
+    z-index: 10;
+    position: relative;
+
+    @include respond("lg") {
+      // tablet
+      padding: 16.5px 24px;
+    }
+    @include respond("sm") {
+      // mbobile
+      padding: 12px 24px;
+    }
+  }
+}

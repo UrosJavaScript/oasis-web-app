@@ -1,0 +1,81 @@
+// Colors
+$primary-color: #14213d; // Glavna boja (npr. za dugmad, linkove)
+$primary-color-transparent: rgba(
+  20,
+  33,
+  61,
+  0.6
+); // Primary boja sa 60% opacity
+
+$secondary-color: #000000; // Sekundarna boja za neutralne elemente
+$accent-color: #4be2a6; // Akcentna boja za isticanje
+$highlight-color: #fca311; // Akcentna boja za dugme i hero tekst
+$header-text-color: #191919; // Boja teksta u headeru
+$header-button-color: #222222;
+$text-muted-color: #808a9e;
+$text-white-color: #ffffff;
+
+$footer-text-color: #00092d;
+$footer-text-color-transparent: rgba(0, 9, 45, 0.6);
+$footer-card-text-color: #00143c;
+
+$circle-color-1: #005aee;
+$circle-color-2: #ff0f65;
+$circle-color-3: #4be2a6;
+
+// Background colors
+$bg-color: #ffffff;
+$bg-color-secondary: #e5e5e5;
+$bg-color-header: linear-gradient(269.65deg, #333333 0%, $secondary-color 100%);
+$footer-card-bg-color: #f8f9fa;
+
+// Fonts
+$font-primary: "Roboto", sans-serif;
+$font-header-primary: "Alfa Slab One", serif;
+$font-header-secondary: "Aleo", serif;
+$font-header-tertiary: "Sofia Sans", sans-serif;
+
+// Font Weight
+$font-thin: 100;
+$font-extralight: 200;
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+$font-black: 900;
+
+// Font Size
+$font-size-xs: 0.75rem; /* 12px */
+$font-size-sm: 0.875rem; /* 14px */
+$font-size-sm-plus: 0.9375rem; /* 15px */
+$font-size-base: 1rem; /* 16px */
+$font-size-md: 1.0625rem; /* 17px */
+$font-size-lg: 1.125rem; /* 18px */
+$font-size-xl: 1.25rem; /* 20px */
+$font-size-2xl: 1.5rem; /* 24px */
+$font-size-3xl: 1.875rem; /* 30px */
+$font-size-4xl: 2.25rem; /* 36px */
+$font-size-5xl: 3rem; /* 48px */
+$font-size-6xl: 2.9375rem; /* 47px */
+$font-size-7xl: 3.75rem; /* 60px */
+
+// Line Height
+$line-height-0: 1;
+$line-height-1: 0.75rem; /* 12px */
+$line-height-2: 1rem; /* 16px */
+$line-height-3: 1.125rem; /* 18px */
+$line-height-4: 1.25rem; /* 20px */
+$line-height-5: 1.3rem; /* 22.1px */
+$line-height-6: 1.5rem; /* 24px */
+$line-height-7: 1.75rem; /* 28px */
+$line-height-8: 2rem; /* 32px */
+$line-height-9: 2.25rem; /* 36px */
+$line-height-10: 2.5rem; /* 40px */
+$line-height-11: 3.525rem; /* 56.4px */
+
+// Letter Spacing
+$letter-spacing-percent-1: 1%;
+$letter-spacing-percent-2: 2%;
+$letter-spacing-px: 5.26px;
