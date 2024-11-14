@@ -1,0 +1,47 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/typography.scss" as *;
+@use "../../../styles/responsive.scss" as *;
+
+.container-timer {
+  text-align: center;
+
+  // mobile
+  @include respond("md") {
+    display: none;
+  }
+
+  > p {
+    background-color: $bg-color;
+    color: $header-text-color;
+    letter-spacing: $letter-spacing-px;
+    font-family: $font-header-tertiary;
+    padding: 4px 8px;
+    font-weight: $font-normal;
+  }
+
+  .wrapper-timer {
+    > div {
+      display: flex;
+      justify-content: center;
+
+      align-items: center;
+      gap: 16px;
+    }
+
+    .flex-timer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      width: 38px;
+      text-align: center;
+
+      color: $accent-color;
+      font-weight: $font-normal;
+
+      & span {
+        color: $text-white-color;
+      }
+    }
+  }
+}

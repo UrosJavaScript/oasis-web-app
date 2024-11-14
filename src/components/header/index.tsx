@@ -1,5 +1,8 @@
-// import React from "react";
+import Button from "../../common/Button";
 import "./style.scss";
+import Timer from "./timer";
+
+import CloseIcon from "../../assets/icons/close-icon.svg";
 
 const Header = () => {
   return (
@@ -8,30 +11,32 @@ const Header = () => {
       <div className="circle circle-2 left"></div>
       <div className="circle circle-3 left"></div>
 
-      <div className="section">
-        <div>
-          <span>Black Friday</span>
-          <span>Cyber Monday</span>
+      <div className="wrapper-header">
+        <div className="col-header">
+          <span className="text-2xl text1">Black Friday</span>
+          <span className="text-2xl text2">Cyber Monday</span>
         </div>
-        <div></div>
 
-        <div> </div>
+        <Timer />
+
+        <Button
+          title="Shop Now"
+          variant="other"
+          onClick={() => alert("Shop Now")}
+          fontFamily="font-header-secondary"
+          padding="8px 16px"
+          border="none"
+          borderRadius="0"
+        />
       </div>
+
+      <button className="header-close-icon">
+        <img src={CloseIcon} alt="header-close-icon" />
+      </button>
 
       <div className="circle circle-4 right"></div>
       <div className="circle circle-5 right"></div>
       <div className="circle circle-6 right"></div>
-
-      {/* <nav>
-        <ul>
-          <li>
-            <a href="/">Početna</a>
-          </li>
-          <li>
-            <a href="/about">O nama</a>
-          </li>
-        </ul>
-      </nav> */}
     </header>
   );
 };

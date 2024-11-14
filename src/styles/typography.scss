@@ -2,66 +2,58 @@
 @use "./variables.scss" as *;
 
 // Font-Size and Line-height
+.text-x {
+  font-size: $font-size-x;
+  line-height: $line-height-1;
+}
 .text-xs {
   font-size: $font-size-xs;
   line-height: $line-height-2;
 }
-
 .text-sm {
   font-size: $font-size-sm;
   line-height: $line-height-3;
 }
-
 .text-sm-plus {
   font-size: $font-size-sm-plus;
   line-height: $line-height-3;
 }
-
 .text-base {
   font-size: $font-size-base;
   line-height: $line-height-6;
 }
-
 .text-md {
   font-size: $font-size-md;
   line-height: $line-height-5;
 }
-
 .text-lg {
   font-size: $font-size-lg;
   line-height: $line-height-7;
 }
-
 .text-xl {
   font-size: $font-size-xl;
   line-height: $line-height-7;
 }
-
 .text-2xl {
   font-size: $font-size-2xl;
   line-height: $line-height-8;
 }
-
 .text-3xl {
   font-size: $font-size-3xl;
   line-height: $line-height-9;
 }
-
 .text-4xl {
   font-size: $font-size-4xl;
   line-height: $line-height-10;
 }
-
 .text-5xl {
   font-size: $font-size-5xl;
   line-height: $line-height-0;
 }
-
 .text-6xl {
   font-size: $font-size-6xl;
   line-height: $line-height-11;
 }
-
 .text-7xl {
   font-size: $font-size-7xl;
   line-height: $line-height-0;

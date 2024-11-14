@@ -1,14 +1,82 @@
-.button {
-  padding: 10px 20px;
-  font-size: 16px;
-  color: white;
-  background-color: #005aee;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+@use "../../styles/variables.scss" as *;
+@use "../../styles/typography.scss" as *;
+@use "../../styles/responsive.scss" as *;
 
-  &:hover {
-    background-color: #004bbd;
+.button {
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out, color 0.8s ease-in-out;
+  padding: 12px 24px;
+
+  &.primary {
+    background-color: $primary-color;
+    color: $text-white-color;
+    border: none;
+    border-radius: 5px;
+    font-size: $font-size-sm-plus;
+    line-height: $line-height-3;
+
+    &:hover {
+      background-color: $circle-color-1;
+      color: $text-white-color;
+    }
+  }
+
+  &.secondary {
+    background-color: $highlight-color;
+    color: $primary-color;
+    border: none;
+    border-radius: 5px;
+    font-weight: $font-semibold;
+    font-size: $font-size-sm-plus;
+    line-height: $line-height-3;
+
+    &:hover {
+      background-color: $circle-color-1;
+      color: $text-white-color;
+    }
+  }
+
+  &.outline {
+    background-color: $bg-color;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    font-size: $font-size-sm-plus;
+    line-height: $line-height-3;
+
+    &:hover {
+      background-color: $circle-color-1;
+      color: $text-white-color;
+    }
+  }
+
+  &.other {
+    background-color: $accent-color;
+    color: $header-button-color;
+    font-size: $font-size-sm-plus;
+    line-height: $line-height-3;
+    letter-spacing: $letter-spacing-px;
+    font-weight: $font-bold;
+
+    &:hover {
+      background-color: $circle-color-1;
+      color: $text-white-color;
+    }
+  }
+
+  &.font-primary {
+    font-family: $font-primary;
+  }
+
+  &.font-header-primary {
+    font-family: $font-header-primary;
+  }
+
+  &.font-header-secondary {
+    font-family: $font-header-secondary;
+  }
+
+  &.font-header-tertiary {
+    font-family: $font-header-tertiary;
   }
 }

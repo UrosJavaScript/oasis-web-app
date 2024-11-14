@@ -5,23 +5,14 @@ header {
   width: 100%;
   position: relative;
   background: $bg-color-header;
-  min-height: 103px;
-
-  @include respond("lg") {
-    // tablet
-    min-height: 112px;
-  }
-  @include respond("sm") {
-    // mbobile
-    min-height: 133px;
-  }
+  font-family: $font-header-primary;
 
   .circle {
     position: absolute;
     width: 69px;
     height: 69px;
     border-radius: 50%;
-    filter: blur(32px);
+    filter: blur(30px);
 
     & .left {
       top: 0;
@@ -57,6 +48,11 @@ header {
       box-shadow: 0 0 20px $circle-color-1;
       top: 0;
       right: 51px;
+
+      // mobile
+      @include respond("md") {
+        top: 90px;
+      }
     }
 
     &.circle-5 {
@@ -64,6 +60,11 @@ header {
       box-shadow: 0 0 20px $circle-color-2;
       top: 12px;
       right: 0;
+
+      // mobile
+      @include respond("md") {
+        top: 104px;
+      }
     }
 
     &.circle-6 {
@@ -71,24 +72,69 @@ header {
       box-shadow: 0 0 20px $circle-color-3;
       top: 47px;
       right: 51px;
+
+      // mobile
+      @include respond("md") {
+        display: none;
+      }
     }
   }
 
-  .section {
+  .wrapper-header {
     display: flex;
     justify-content: space-between;
-    color: gold;
+    align-items: center;
     padding: 12px 200px;
     z-index: 10;
     position: relative;
 
+    // tablet
     @include respond("lg") {
-      // tablet
       padding: 16.5px 24px;
     }
+    // mobile
     @include respond("sm") {
-      // mbobile
       padding: 12px 24px;
+      flex-direction: column;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .col-header {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+
+      & span {
+        letter-spacing: $letter-spacing-px;
+        font-weight: $font-normal;
+      }
+      .text1 {
+        color: $text-white-color;
+      }
+      .text2 {
+        color: $accent-color;
+      }
+    }
+  }
+
+  .header-close-icon {
+    background-color: $bg-color;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 4px;
+    border: none;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    z-index: 10;
+
+    transition: background-color 0.6s ease-in-out;
+
+    &:hover {
+      background-color: $highlight-color;
     }
   }
 }

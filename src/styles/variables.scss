@@ -21,7 +21,7 @@ $footer-card-text-color: #00143c;
 
 $circle-color-1: #005aee;
 $circle-color-2: #ff0f65;
-$circle-color-3: #4be2a6;
+$circle-color-3: $accent-color;
 
 // Background colors
 $bg-color: #ffffff;
@@ -47,6 +47,7 @@ $font-extrabold: 800;
 $font-black: 900;
 
 // Font Size
+$font-size-x: 0.625rem; /* 10px */
 $font-size-xs: 0.75rem; /* 12px */
 $font-size-sm: 0.875rem; /* 14px */
 $font-size-sm-plus: 0.9375rem; /* 15px */

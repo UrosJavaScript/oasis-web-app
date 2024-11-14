@@ -1,0 +1,112 @@
+@use "../../styles/responsive.scss" as *;
+@use "../../styles/variables.scss" as *;
+
+footer {
+  background-color: $bg-color-secondary;
+
+  z-index: 10;
+  position: relative;
+  padding: 24px 200px;
+
+  @include respond("lg") {
+    padding: 16px 24px;
+  }
+
+  .container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 51px;
+
+    @include respond("xxl") {
+      flex-direction: column;
+    }
+  }
+
+  .wrapper-global-agencies {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        color: $footer-text-color;
+        font-weight: $font-semibold;
+        min-width: 157px;
+      }
+      > .global-text {
+        color: $footer-text-color-transparent;
+      }
+    }
+  }
+
+  .container-card-footer {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    justify-content: flex-end;
+
+    @include respond("xxl") {
+      gap: 16px;
+    }
+
+    @include respond("md") {
+      gap: 8px;
+    }
+
+    @include respond("xxl") {
+      width: 100%;
+      padding: 16px 24px;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond("md") {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .wrapper-card-footer {
+      background-color: $footer-card-bg-color;
+      padding: 16px 18px;
+      border-radius: 8px;
+      flex: 1;
+
+      @include respond("xxl") {
+        display: flex;
+        justify-content: center;
+      }
+
+      .flex-card-footer {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        > div {
+          .rating-footer {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            > span {
+              font-weight: $font-semibold;
+              color: $footer-card-text-color;
+            }
+          }
+
+          .name-rating-footer {
+            font-weight: $font-semibold;
+            color: $footer-card-text-color;
+            font-size: $font-size-sm;
+            line-height: $line-height-6;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
