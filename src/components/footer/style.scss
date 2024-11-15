@@ -3,20 +3,23 @@
 
 footer {
   background-color: $bg-color-secondary;
-
-  z-index: 10;
+  z-index: 7;
   position: relative;
   padding: 24px 200px;
 
   @include respond("lg") {
-    padding: 16px 24px;
+    padding: 10px 24px;
   }
 
   .container-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 51px;
+    gap: 26px;
+
+    @include respond("lg") {
+      gap: 0;
+    }
 
     @include respond("xxl") {
       flex-direction: column;
@@ -42,6 +45,12 @@ footer {
         color: $footer-text-color-transparent;
       }
     }
+
+    .over-global-text-footer {
+      color: $footer-text-color;
+      font-weight: $font-semibold;
+      text-transform: uppercase;
+    }
   }
 
   .container-card-footer {
@@ -60,8 +69,6 @@ footer {
 
     @include respond("xxl") {
       width: 100%;
-      padding: 16px 24px;
-
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
@@ -75,7 +82,6 @@ footer {
       padding: 16px 18px;
       border-radius: 8px;
       flex: 1;
-
       @include respond("xxl") {
         display: flex;
         justify-content: center;

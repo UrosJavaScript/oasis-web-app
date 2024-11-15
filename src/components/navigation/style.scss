@@ -3,7 +3,6 @@
 
 nav {
   background-color: $primary-color;
-
   z-index: 10;
   position: relative;
   padding: 16px 200px;
@@ -39,5 +38,167 @@ nav {
     justify-content: space-between;
     width: 100%;
     align-items: center;
+
+    .desktop-menu ul {
+      display: flex;
+      gap: 12px;
+    }
+
+    .menu-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      a {
+        color: $text-white-color;
+        text-decoration: none;
+        font-weight: $font-normal;
+      }
+
+      &:hover .dropdown {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      &:hover .chevron-icon {
+        opacity: 0;
+        transform: rotate(180deg);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      }
+
+      .dropdown {
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        left: -73px;
+        background: $bg-color;
+        box-shadow: 0px 0px 16px 0px $navmenu-bohshadow-color;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        z-index: 9999;
+        gap: 16px;
+        margin-top: 41px;
+        display: flex;
+        opacity: 0;
+        transform: scale(0.95);
+        transition: opacity 0.3s ease-in-out, transform 0.6s ease-in-out;
+        width: 835px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -47px;
+          left: 28px;
+          width: 155px;
+          height: 106px;
+        }
+
+        .submenu-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+          padding: 24px;
+          width: 100%;
+        }
+
+        .submenu-group {
+          gap: 8px;
+          display: flex;
+          flex-direction: column;
+
+          > span {
+            color: $primary-color;
+            font-weight: $font-semibold;
+            text-transform: uppercase;
+          }
+        }
+
+        .submenu-items {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          padding: 8px 0;
+
+          .submenu-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+
+            .submenu-name {
+              color: $primary-color;
+              font-weight: $font-semibold;
+            }
+
+            .submenu-icon {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+
+        .sidebar {
+          background: $bg-color-secondary;
+          padding: 24px;
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+          display: flex;
+          flex-direction: column;
+          min-width: 191px;
+          height: auto;
+          gap: 16px;
+
+          .sidebar-heading {
+            color: $primary-color;
+            font-weight: $font-semibold;
+          }
+
+          .sidebar-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            cursor: pointer;
+
+            .sidebar-name {
+              color: $primary-color;
+              font-weight: $font-semibold;
+            }
+
+            .sidebar-icon {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+
+        .demo-section {
+          margin-top: 16px;
+          grid-column: span 2;
+          display: flex;
+          flex-direction: row;
+          background-color: $bg-color-secondary;
+          padding: 12px;
+          width: 100%;
+          justify-content: space-between;
+          border-radius: 12px;
+
+          .demo-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            .demo-first-text {
+              font-weight: $font-medium;
+              color: $primary-color;
+            }
+            .demo-second-text {
+              font-weight: $font-medium;
+              color: $primary-color-transparent;
+            }
+          }
+        }
+      }
+    }
   }
 }

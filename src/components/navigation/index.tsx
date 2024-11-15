@@ -1,14 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Logo from "../../assets/logo.svg";
 import Button from "../../common/Button";
+import DesktopNavMenu from "./DesktopNavMenu";
 import "./style.scss";
 
 const Navigation = () => {
   return (
     <nav>
       <div className="nav-top">
-        <a href="#" className="text-sm-plus">Log in</a>
-        <a href="#" className="text-sm-plus ">Sign Up</a>
+        <a href="#" className="text-sm-plus">
+          Log in
+        </a>
+        <a href="#" className="text-sm-plus ">
+          Sign Up
+        </a>
       </div>
 
       <div className="nav-item">
@@ -16,7 +21,8 @@ const Navigation = () => {
           <img src={Logo} alt="logo-oasis" />
         </a>
 
-        <div></div>
+        <DesktopNavMenu />
+
         <Button
           title="Book a Demo"
           variant="secondary"

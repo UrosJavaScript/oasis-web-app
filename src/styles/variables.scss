@@ -1,23 +1,22 @@
 // Colors
-$primary-color: #14213d; // Glavna boja (npr. za dugmad, linkove)
-$primary-color-transparent: rgba(
-  20,
-  33,
-  61,
-  0.6
-); // Primary boja sa 60% opacity
+$primary-color: #14213d;
+$primary-color-transparent: rgba(20, 33, 61, 0.6);
 
-$secondary-color: #000000; // Sekundarna boja za neutralne elemente
-$accent-color: #4be2a6; // Akcentna boja za isticanje
-$highlight-color: #fca311; // Akcentna boja za dugme i hero tekst
-$header-text-color: #191919; // Boja teksta u headeru
+$secondary-color: #000000;
+$accent-color: #4be2a6;
+$highlight-color: #fca311;
+$header-text-color: #191919;
 $header-button-color: #222222;
 $text-muted-color: #808a9e;
 $text-white-color: #ffffff;
 
+$video-border: #f4f4f44d;
+
 $footer-text-color: #00092d;
 $footer-text-color-transparent: rgba(0, 9, 45, 0.6);
 $footer-card-text-color: #00143c;
+
+$navmenu-bohshadow-color: #00000014; 
 
 $circle-color-1: #005aee;
 $circle-color-2: #ff0f65;
@@ -77,6 +76,6 @@ $line-height-10: 2.5rem; /* 40px */
 $line-height-11: 3.525rem; /* 56.4px */
 
 // Letter Spacing
-$letter-spacing-percent-1: 1%;
-$letter-spacing-percent-2: 2%;
+$letter-spacing-1px: 1px;
+// $letter-spacing-percent-2: 2%;
 $letter-spacing-px: 5.26px;

@@ -1,5 +1,6 @@
 import Footer from "./components/footer";
 import Header from "./components/header";
+import HeroSection from "./components/heroSection";
 import Navigation from "./components/navigation";
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <>
       <Header />
       <Navigation />
+      <HeroSection />
       <Footer />
     </>
   );
