@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+# Oasis Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive web application designed for mobile and tablet devices. The project features a modular structure, a functional countdown timer, and a Play button for video content.
 
-## Available Scripts
+## Technologies Used in the Project
 
-In the project directory, you can run:
+- HTML5
+- SCSS
+- JavaScript (ES6+)
+- React TS
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Responsive design** for various devices
+- **Countdown timer** (days, hours, minutes, seconds)
+- **Play button** for video playback
+- Modular component structure
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instructions for Running the Project
 
-### `npm test`
+- After downloading the project (by cloning from GitHub or extracting a ZIP file):
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Open the terminal and navigate to the project's root directory: **cd directory-name**
+2. Install all required dependencies using: **npm install** (Note: Ensure you have the latest version of Node.js and npm installed)
+3. Once installation is complete, start the project with: **npm start**
+4. Open the application in a browser at **http://localhost:3000** or an alternative port
 
-### `npm run build`
+## Note
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The original font **Neue Haas Grotesk Display Pro** is not free. **Roboto** was used as a substitute due to its visual similarity.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Author
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Full Name**: Uroš Kovčić
+- **Contact**: kowcicuros70@gmail.com
+- **GitHub project**: https://github.com/UrosJavaScript/oasis-web-app

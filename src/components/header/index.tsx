@@ -1,8 +1,8 @@
 import Button from "../../common/Button";
-import "./style.scss";
 import Timer from "./timer";
-
 import CloseIcon from "../../assets/icons/close-icon.svg";
+
+import "./style.scss";
 
 const Header = () => {
   return (
@@ -17,7 +17,7 @@ const Header = () => {
           <span className="text-2xl text2">Cyber Monday</span>
         </div>
 
-        <Timer />
+        <Timer duration={7 * 24 * 60 * 60 * 1000} />
 
         <Button
           title="Shop Now"

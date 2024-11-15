@@ -49,7 +49,6 @@ header {
       top: 0;
       right: 51px;
 
-      // mobile
       @include respond("md") {
         top: 90px;
       }
@@ -61,7 +60,6 @@ header {
       top: 12px;
       right: 0;
 
-      // mobile
       @include respond("md") {
         top: 104px;
       }
@@ -73,7 +71,6 @@ header {
       top: 47px;
       right: 51px;
 
-      // mobile
       @include respond("md") {
         display: none;
       }
@@ -88,11 +85,10 @@ header {
     z-index: 10;
     position: relative;
 
-    // tablet
     @include respond("lg") {
       padding: 16.5px 24px;
     }
-    // mobile
+
     @include respond("sm") {
       padding: 12px 24px;
       flex-direction: column;
@@ -130,7 +126,6 @@ header {
     right: 16px;
     top: 16px;
     z-index: 10;
-
     transition: background-color 0.6s ease-in-out;
 
     &:hover {

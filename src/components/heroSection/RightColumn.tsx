@@ -1,5 +1,4 @@
-import { useRef, useState } from "react";
-
+import useVideoPlayer from "../../hooks/useVideoPlayer";
 import VideoSource from "../../assets/videos/hero-video.mp4";
 import VideoRightSource from "../../assets/videos/hero-right-video.mp4";
 import PlayIcon from "../../assets/icons/play-button.svg";
@@ -7,22 +6,8 @@ import PauseIcon from "../../assets/icons/pause-button.svg";
 import HandArrow from "../../assets/icons/hand-arrow-video.svg";
 
 const RightColumn = () => {
-  const leftVideoRef = useRef<HTMLVideoElement | null>(null);
-  const rightVideoRef = useRef<HTMLVideoElement | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handlePlayPause = () => {
-    if (leftVideoRef.current && rightVideoRef.current) {
-      if (isPlaying) {
-        leftVideoRef.current.pause();
-        rightVideoRef.current.pause();
-      } else {
-        leftVideoRef.current.play();
-        rightVideoRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
+  const { leftVideoRef, rightVideoRef, isPlaying, handlePlayPause } =
+    useVideoPlayer();
 
   return (
     <div className="hero-right-column">

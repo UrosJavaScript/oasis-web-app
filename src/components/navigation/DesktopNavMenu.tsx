@@ -51,20 +51,18 @@ const DesktopNavMenu = () => {
                       <span className="text-sm sidebar-heading">
                         {item.sidebarHeading}
                       </span>
-                      <ul>
-                        {item.sidebarMenu.map((sidebarItem, sidebarIndex) => (
-                          <li key={sidebarIndex} className="sidebar-item">
-                            <img
-                              src={sidebarItem.icon}
-                              alt={`${sidebarItem.name} icon`}
-                              className="sidebar-icon"
-                            />
-                            <a href="#" className="text-sm-plus sidebar-name">
-                              {sidebarItem.name}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
+                      {item.sidebarMenu.map((sidebarItem, sidebarIndex) => (
+                        <div key={sidebarIndex} className="sidebar-item">
+                          <img
+                            src={sidebarItem.icon}
+                            alt={`${sidebarItem.name} icon`}
+                            className="sidebar-icon"
+                          />
+                          <a href="#" className="text-sm-plus sidebar-name">
+                            {sidebarItem.name}
+                          </a>
+                        </div>
+                      ))}
                     </div>
                   )}
                 </div>
